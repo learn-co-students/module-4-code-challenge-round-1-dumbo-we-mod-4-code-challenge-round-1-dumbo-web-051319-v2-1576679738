@@ -40,6 +40,27 @@ class App extends Component {
   handleOnSubmit = (evt, newBookObj) => {
     evt.preventDefault()
     //console.log(evt.target, newBookObj)
+    const newBookId = this.state.books.length + 1
+    fetch(`http://localhost:3005/books`, {
+      method:'POST',
+      headers: { 
+        'Content-type': 'application/json',
+        'accept': 'application/json'
+     },
+     
+      body: JSON.stringify({
+        "id": newBookId,
+        "title" : newBookObj.title,
+        "author": newBookObj.author,
+        "img": newBookObj.img,
+      })
+    })
+    .then(resp => resp.json())
+    .then(json_resp => {
+
+      console.log(json_resp)
+    })
+
     this.setState({
       books:[newBookObj, ...this.state.books]
     })

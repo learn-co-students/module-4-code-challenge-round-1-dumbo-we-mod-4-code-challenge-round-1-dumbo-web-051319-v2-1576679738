@@ -47,6 +47,30 @@
       "title": "We Should All Be Feminists",
       "author": "Chimamanda Ngozi Adichie",
       "img": "https://images-na.ssl-images-amazon.com/images/I/51L9u20bC7L._SX348_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 9,
+      "title": "The Color Purple",
+      "author": "Alice Walker",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/ColorPurple.jpg/220px-ColorPurple.jpg"
+    },
+    {
+      "id": 10,
+      "title": "How to Win Friends and Influence People ",
+      "author": " Dale Carnegie",
+      "img": "https://images.gr-assets.com/books/1442726934l/4865.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Harry Potter and the Sorcerer's Stone Novel ",
+      "author": "J. K. Rowling",
+      "img": "https://kbimages1-a.akamaihd.net/96634076-1c91-4fa9-9518-41c5bfa3e59f/353/569/90/False/harry-potter-and-the-sorcerer-s-stone-the-first-book-in-the-phenomenal-internationally-bestselling-harry-potter-series-by-j-k-rowling.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Nancy Drew #1: The Secret of the Old Clock",
+      "author": "Carolyn Keene",
+      "img": "https://g.christianbook.com/g/slideshow/9/95012/main/95012_1_ftc_dp.jpg"
     }
   ]
 }

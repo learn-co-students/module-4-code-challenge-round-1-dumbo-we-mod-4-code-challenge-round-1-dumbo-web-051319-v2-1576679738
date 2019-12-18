@@ -9,7 +9,8 @@ class App extends Component {
 state = {
   allBooks: [],
   displayBooks: [],
-  bookShelf: []
+  bookShelf: [],
+  shelvedIds: []
 }
 
 getAllBooks = () => {
@@ -50,17 +51,14 @@ addBook = (bookObj) => {
 
 
 handleClick = (bookObj) => {
- if(!bookObj.shelved){
-  let updatedObj = {...bookObj, shelved: true, id: bookObj.id+Math.random()*100}
-  let copyShelved = [...this.state.bookShelf]
-  this.setState({
-    bookShelf: [...copyShelved, updatedObj],
-  },
-  )
+ if(!this.state.bookShelf.includes(bookObj) && !this.state.shelvedIds.includes(bookObj.id)){
+  let updatedShelved = [...this.state.bookShelf, bookObj]
+  let updatedIds = [...this.state.shelvedIds, bookObj.id]
+  this.setState({ bookShelf: updatedShelved, shelvedIds: updatedIds})
  } else {
-   let removedFromShelf = this.state.bookShelf.filter(book=> bookObj.name !== book.name)
-   this.setState({bookShelf: removedFromShelf}
-    
+   let removedFromShelf = this.state.bookShelf.filter(book=> bookObj.id !== book.id)
+   let removedFromIds = this.state.shelvedIds.filter(id=> bookObj.id !== id)
+   this.setState({bookShelf: removedFromShelf, shelvedIds: removedFromIds}
     )
  }
 }

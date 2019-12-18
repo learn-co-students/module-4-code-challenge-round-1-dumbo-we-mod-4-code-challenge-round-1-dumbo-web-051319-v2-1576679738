@@ -8,7 +8,7 @@ class App extends Component {
 
   state = {
     books: [],
-    shelfBooks:[]
+    shelfBooks:[],
   }
 
   componentDidMount = () => {
@@ -39,13 +39,37 @@ class App extends Component {
     })
   }
   
+  addNewBook = (evt,title,author,img) => {
+    // evt.preventDefault()
+    // console.log(evt)
+    console.log(title,author,img)
+    const book = {
+      title,
+      author,
+      img
+    }
+
+    this.setState({
+      books: [book , ...this.state.books]
+    })
+  }
+  
+
+//   { 
+//     "id": 1, 
+//     "title": "The Great Gatsby", 
+//     "author": "F. Scott Fitzgerald", 
+//     "img": "https://mppl.org/wp-content/uploads/0-214x300.jpg" 
+//  }
   
   render() {
     return (
       <div className="book-container">
         <BookList 
         books={this.state.books} 
-        addToShelf={this.addToShelf}/>
+        addToShelf={this.addToShelf} 
+        addNewBook={this.addNewBook}/>
+
         <Bookshelf 
         books={this.state.shelfBooks} 
         removeFromShelf={this.removeFromShelf} />

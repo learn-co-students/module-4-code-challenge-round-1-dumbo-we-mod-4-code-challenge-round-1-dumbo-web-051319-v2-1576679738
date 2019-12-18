@@ -47,6 +47,42 @@
       "title": "We Should All Be Feminists",
       "author": "Chimamanda Ngozi Adichie",
       "img": "https://images-na.ssl-images-amazon.com/images/I/51L9u20bC7L._SX348_BO1,204,203,200_.jpg"
+    },
+    {
+      "newlyCreatedBook": {
+        "id": "00ae05e6-8023-4a73-97a3-ad9745e1efe0",
+        "title": "Gender Trouble",
+        "author": "Judith Butler",
+        "img": "https://upload.wikimedia.org/wikipedia/en/c/ce/Gender_Trouble%2C_first_edition.jpg"
+      },
+      "id": 9
+    },
+    {
+      "newlyCreatedBook": {
+        "id": "a999d5fa-c83a-42b5-a6e1-6b46205ea57b",
+        "title": "Gender Trouble",
+        "author": "Judith Butler",
+        "img": "https://upload.wikimedia.org/wikipedia/en/c/ce/Gender_Trouble%2C_first_edition.jpg"
+      },
+      "id": 10
+    },
+    {
+      "id": "742db794-bdc3-44aa-8af9-c47a97ad0455",
+      "title": "Gender Trouble",
+      "author": "Judith Butler",
+      "img": "https://upload.wikimedia.org/wikipedia/en/c/ce/Gender_Trouble%2C_first_edition.jpg"
+    },
+    {
+      "id": "f7ace984-caa9-4171-8ed8-799c7949d221",
+      "title": "The Second Sex",
+      "author": "Simone de Beauvoir",
+      "img": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327978178l/457264.jpg"
+    },
+    {
+      "id": "8ac7d3fe-8c02-44cd-a51f-b9ee00d7deb9",
+      "title": "Grundrisse",
+      "author": "Karl Marx",
+      "img": "https://upload.wikimedia.org/wikipedia/en/f/f2/Grundrisse_Karl_Marx.jpg"
     }
   ]
 }

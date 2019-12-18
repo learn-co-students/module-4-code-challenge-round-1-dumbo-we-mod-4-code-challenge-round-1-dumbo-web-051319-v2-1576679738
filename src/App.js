@@ -38,13 +38,23 @@ class App extends Component {
     })
   }
 
+  // function works without persisting on backend => commented out the props down below where functions get called in the components below
+  // addBookToMainList = (bookObj) => {
+  //   this.setState({
+  //     allBooks: [...this.state.allBooks, bookObj]
+  //   })
+  // }
 
+  //Bonus function for backend
+  addBookToMainListBackEnd = (bookObj) => {
+    console.log(bookObj)
+  }
 
   render() {
     console.log(this.state.allBooks)
     return (
       <div className="book-container">
-        <BookList allBooks={this.state.allBooks} addBookToBookShelf={this.addBookToBookShelf} />
+        <BookList allBooks={this.state.allBooks} addBookToBookShelf={this.addBookToBookShelf} /*addBookToMainList={this.addBookToMainList} */ addBookToMainListBackEnd={this.addBookToMainListBackEnd} />
         <Bookshelf myBookShelf={this.state.myBookShelf} removeBookFromBookShelf={this.removeBookFromBookShelf} />
       </div>
     );

@@ -16,7 +16,9 @@ class Form extends React.Component {
 
   onSubmit = (e) => {
     e.preventDefault()
-    this.props.addBookToMainList(this.state)
+    // this.props.addBookToMainList(this.state)
+    // bonus function: 
+    this.props.addBookToMainListBackEnd(this.state)
   }
 
 

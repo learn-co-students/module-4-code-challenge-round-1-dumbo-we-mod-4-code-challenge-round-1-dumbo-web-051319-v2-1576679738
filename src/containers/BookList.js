@@ -4,9 +4,7 @@ import Form from "../components/Form";
 
 class BookList extends Component {
 
-  addBookToMainList = (bookObj) => {
-    console.log(bookObj)
-  }
+
 
   render() {
     const renderBooks = this.props.allBooks.map((book) => {
@@ -15,7 +13,7 @@ class BookList extends Component {
     return (
       <div className="book-list">
         <h1>Book List</h1>
-        <Form addBookToMainList={this.addBookToMainList} />
+        <Form /*addBookToMainList={this.props.addBookToMainList}*/ addBookToMainListBackEnd={this.props.addBookToMainListBackEnd} />
         <ul>{renderBooks}</ul>
       </div>
     );

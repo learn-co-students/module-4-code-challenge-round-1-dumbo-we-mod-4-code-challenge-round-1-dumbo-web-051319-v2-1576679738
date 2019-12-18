@@ -16,7 +16,7 @@
       "id": 3,
       "title": "To Kill A Mockingbird",
       "author": "Harper Lee",
-      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/7/79/To_Kill_a_Mockingbird.JPG/220px-To_Kill_a_Mockingbird.JPG"
+      "img": "https://images-na.ssl-images-amazon.com/images/I/516IbJ592JL.jpg"
     },
     {
       "id": 4,
@@ -47,6 +47,60 @@
       "title": "We Should All Be Feminists",
       "author": "Chimamanda Ngozi Adichie",
       "img": "https://images-na.ssl-images-amazon.com/images/I/51L9u20bC7L._SX348_BO1,204,203,200_.jpg"
+    },
+    {
+      "title": "Atonement",
+      "author": "Ian McEwan",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Atonement_%28novel%29.jpg/220px-Atonement_%28novel%29.jpg",
+      "id": 9
+    },
+    {
+      "title": "All The Light We Cannot See",
+      "author": "Anthony Doerr",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/2/22/All_the_Light_We_Cannot_See_%28Doerr_novel%29.jpg/220px-All_the_Light_We_Cannot_See_%28Doerr_novel%29.jpg",
+      "id": 10
+    },
+    {
+      "title": "Little Fires Everywhere",
+      "author": "Celeste Ng",
+      "img": "https://prodimage.images-bn.com/pimages/9780735224315_p0_v2_s550x406.jpg",
+      "id": 11
+    },
+    {
+      "title": "Me",
+      "author": "Elton John",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81Ot3GUSecL.jpg",
+      "id": 12
+    },
+    {
+      "title": "Hard Child",
+      "author": "Natalie Shapero",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81v2PPPq2yL.jpg",
+      "id": 13
+    },
+    {
+      "title": "Oryx and Crake",
+      "author": "Margaret Atwood",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91qo%2BzL-btL.jpg",
+      "id": 14
+    },
+    {
+      "title": "Beloved",
+      "author": "Toni Morrison",
+      "img": "https://images.penguinrandomhouse.com/cover/9780525659273",
+      "id": 15
+    },
+    {
+      "title": "Life & Times of Michael K",
+      "author": "J. M. Coetzee",
+      "img": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403185692l/830264.jpg",
+      "id": 16
+    },
+    {
+      "title": "Bossypants",
+      "author": "Tina Fey",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/418ITtRuOeL.jpg",
+      "id": 17
     }
   ]
 }

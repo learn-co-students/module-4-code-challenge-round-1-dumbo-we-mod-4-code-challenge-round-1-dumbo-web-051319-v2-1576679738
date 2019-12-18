@@ -5,11 +5,87 @@ import BookList from "./containers/BookList";
 import Bookshelf from "./containers/Bookshelf";
 
 class App extends Component {
+  state={
+    bookArray: [],
+    shelvedBooks: [],
+    author: true
+  }
+
+  componentDidMount() {
+    fetch("http://localhost:3005/books")
+    .then(r => r.json())
+    .then((books) => {
+      let originalSortByAuthor = books.sort((a, b,) => a.author.localeCompare(b.author))
+      this.setState({
+        bookArray: originalSortByAuthor
+      })
+    })
+  }
+
+  // addBookToShelf = (bookToAdd) => {
+  //   this.setState({
+  //     shelvedBooks: [...this.state.shelvedBooks, bookToAdd]
+  //   })
+  // }
+
+  editBookShelf = (bookToEdit) => {
+    if (this.state.shelvedBooks.includes(bookToEdit)) {
+      let filteredBooks = this.state.shelvedBooks.filter(book => book !== bookToEdit)
+      this.setState({
+        shelvedBooks: filteredBooks
+      })
+    } else {
+      this.setState({
+        shelvedBooks: [...this.state.shelvedBooks, bookToEdit]
+      })
+    }
+  }
+
+  createNewBook = (newBook) => {
+    fetch("http://localhost:3005/books", {
+      method: "POST",
+      headers: {
+        'content-type': 'application/json',
+        'accepts': 'application/json'
+      },
+      body: JSON.stringify({
+        title: newBook.title,
+        author: newBook.author,
+        img: newBook.img
+      })
+    })
+    .then(r => r.json())
+    .then((newBookObj) => {
+      this.setState({
+        bookArray: [...this.state.bookArray, newBookObj]
+      })
+    })
+  }
+
+  sortBooks = () => {
+    if (this.state.author === true) {
+      let booksSortedByTitle = this.state.bookArray.sort((a ,b) => a.title.localeCompare(b.title))
+      this.setState({
+        bookArray: booksSortedByTitle,
+        author: false
+      })
+    } else {
+      let booksSortedByAuthor = this.state.bookArray.sort((a, b) => a.author.localeCompare(b.author))
+      this.setState({
+        bookArray: booksSortedByAuthor,
+        author: true
+      })
+    }
+  }
+
+
   render() {
+    let shelveBooksByAuthor = this.state.shelvedBooks.sort((a, b) => a.author.localeCompare(b.author))
+
     return (
       <div className="book-container">
-        <BookList />
-        <Bookshelf />
+        <BookList bookArray={this.state.bookArray} editBook={this.editBookShelf} createNewBook={this.createNewBook} sortBooks={this.sortBooks} author={this.state.author} />
+        <Bookshelf shelvedBooks={shelveBooksByAuthor} editBook={this.editBookShelf} />
       </div>
     );
   }

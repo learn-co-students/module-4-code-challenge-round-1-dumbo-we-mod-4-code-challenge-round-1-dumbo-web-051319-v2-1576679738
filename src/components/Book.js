@@ -2,9 +2,10 @@ import React from "react";
 
 const Book = props => {
   return (
-    <div>
-      <h2>{/*book title*/}</h2>
-      {/*book img*/}
+    <div onClick={() => props.editBook(props.book)} className="ui card" >
+      <h2>{props.book.title}</h2>
+      <img src={props.book.img} alt="" />
+      <p>{props.book.author}</p>
     </div>
   );
 };

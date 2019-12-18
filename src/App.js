@@ -26,28 +26,24 @@ class App extends Component {
 			.then(bookData => this.setState({ books: bookData }))
 			.catch(err => console.error(err));
 	};
-	addBookToShelf = currentBook => {
-		console.log(this.state.bookShelf.includes(currentBook));
-		if (this.state.bookShelf.includes(currentBook)) {
+	addBookToShelf = book => {
+		if (this.state.bookShelf.includes(book)) {
 			this.setState({
 				bookShelf: this.state.bookShelf
 			});
 		} else {
 			this.setState({
-				bookShelf: [...this.state.bookShelf, currentBook]
+				bookShelf: [...this.state.bookShelf, book]
 			});
 		}
 	};
 
-	removeBookFromShelf = chosenBook => {
-		console.log("Hello");
-		const deletedBook = this.state.bookShelf.filter(
-			book => book.id !== chosenBook.id
+	removeFromBookShelf = book => {
+		const filteredBook = this.state.bookShelf.filter(
+			chosenBook => chosenBook.id !== book.id
 		);
-		console.log(deletedBook);
 		this.setState({
-			bookShelf: [...this.state.bookShelf, deletedBook],
-			displayStatus: !this.state.displayStatus
+			bookShelf: filteredBook
 		});
 	};
 
@@ -101,7 +97,7 @@ class App extends Component {
 				/>
 				<Bookshelf
 					bookShelf={this.state.bookShelf}
-					onClick={this.removeBookFromShelf}
+					onClick={this.removeFromBookShelf}
 					displayStatus={this.state.displayStatus}
 				/>
 			</div>

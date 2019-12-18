@@ -47,6 +47,24 @@
       "title": "We Should All Be Feminists",
       "author": "Chimamanda Ngozi Adichie",
       "img": "https://images-na.ssl-images-amazon.com/images/I/51L9u20bC7L._SX348_BO1,204,203,200_.jpg"
+    },
+    {
+      "title": "Adventures of SharkBoi",
+      "author": "Ruben",
+      "img": "https://media.giphy.com/media/11ISwbgCxEzMyY/giphy.gif",
+      "id": 9
+    },
+    {
+      "title": "and Lava Girl",
+      "author": "Ruben also",
+      "img": "https://media.giphy.com/media/WrxoaVPiq0cG4/giphy.gif",
+      "id": 10
+    },
+    {
+      "title": "Not So Frozen",
+      "author": "Olaf",
+      "img": "https://media.giphy.com/media/aQYR1p8saOQla/giphy.gif",
+      "id": 11
     }
   ]
 }

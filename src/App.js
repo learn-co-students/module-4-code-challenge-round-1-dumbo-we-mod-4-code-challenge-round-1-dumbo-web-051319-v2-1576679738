@@ -34,12 +34,18 @@ removeBookFromShelf = (book) => {
 this.setState({bookShelf: newBooksOnShelf})
 }
 
+getNewBook = (book) => {
+
+  this.setState({allBooks: [...this.state.allBooks, book]})
+  // console.log(book)
+}
+
 
   render() {
     // console.log(this.state.bookShelf)
     return (
       <div className="book-container">
-        <Form />
+        <Form getNewBook={this.getNewBook}/>
         <BookList allBooks={this.state.allBooks} addBook={this.addToBookShelf}/>
         <Bookshelf bookShelf={this.state.bookShelf} removeBook={this.removeBookFromShelf}/>
       </div>

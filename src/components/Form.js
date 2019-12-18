@@ -1,16 +1,17 @@
 import React from "react";
+import uuid from 'uuid'
 
 class Form extends React.Component {
 
   state = {
-    name: '',
+    title: '',
     imgUrl: '',
     author: ''
   }
 
 
   handleNameChange = (event) => {
-    this.setState({ name: event.target.value });
+    this.setState({ title: event.target.value });
   }
   handleImgChange = (event) => {
     this.setState({ imgUrl: event.target.value });
@@ -21,29 +22,37 @@ class Form extends React.Component {
   }
 
   handleSubmit = (event) => {
-    alert('A name was submitted: ' + this.state.name + this.state.imgUrl);
     event.preventDefault();
     //transfer control to create book
+    this.createBook()
   }
 
 
-  createBook = (name, imgUrl) =>{
+  createBook = () =>{
+
+    let newBook = {
+      id: uuid.v4(),
+      title: this.state.title,
+      author: this.state.author,
+      img: this.state.imgUrl  
+    }
+this.props.getNewBook(newBook)
 
 
   }
   render() {
-    console.log(this.state.name)
-    console.log(this.state.imgUrl)
-    console.log(this.state.author)
+    // console.log(this.state.name)
+    // console.log(this.state.imgUrl)
+    // console.log(this.state.author)
     return (
 
       <div>
-        <h1> Add A New Book</h1>
+        <h1> Create A New Book</h1>
 
       <form onSubmit={this.handleSubmit}>
         <label>
-          Book Name:
-          <input type="text" value={this.state.name} onChange={this.handleNameChange} />
+          Book Title:
+          <input type="text" value={this.state.title} onChange={this.handleNameChange} />
         </label> <br />
           <label>
             Book Author:

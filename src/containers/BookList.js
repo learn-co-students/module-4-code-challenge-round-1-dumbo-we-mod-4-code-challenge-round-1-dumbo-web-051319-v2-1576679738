@@ -13,7 +13,7 @@ class BookList extends Component {
     return (
       <div className="book-list">
         <h1>Book List</h1>
-        <Form /*addBookToMainList={this.props.addBookToMainList}*/ addBookToMainListBackEnd={this.props.addBookToMainListBackEnd} />
+        <Form addBookToMainList={this.props.addBookToMainList} /*addBookToMainListBackEnd={this.props.addBookToMainListBackEnd} */ />
         <ul>{renderBooks}</ul>
       </div>
     );

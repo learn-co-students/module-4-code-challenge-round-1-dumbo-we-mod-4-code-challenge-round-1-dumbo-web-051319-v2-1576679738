@@ -39,38 +39,38 @@ class App extends Component {
   }
 
   // function works without persisting on backend => commented out the props down below where functions get called in the components below
-  // addBookToMainList = (bookObj) => {
-  //   this.setState({
-  //     allBooks: [...this.state.allBooks, bookObj]
-  //   })
-  // }
+  addBookToMainList = (bookObj) => {
+    this.setState({
+      allBooks: [...this.state.allBooks, bookObj]
+    })
+  }
 
   //Bonus function for backend
-  addBookToMainListBackEnd = (bookObj) => {
-    fetch('http://localhost:3005/books', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        title: bookObj.title,
-        author: bookObj.author,
-        img: bookObj.img,
-      })
-    }).then(response => response.json())
-      .then((response) => {
-        this.setState({
-          allBooks: [...this.state.allBooks, response]
-        })
-      })
+  // addBookToMainListBackEnd = (bookObj) => {
+  //   fetch('http://localhost:3005/books', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({
+  //       title: bookObj.title,
+  //       author: bookObj.author,
+  //       img: bookObj.img,
+  //     })
+  //   }).then(response => response.json())
+  //     .then((response) => {
+  //       this.setState({
+  //         allBooks: [...this.state.allBooks, response]
+  //       })
+  //     })
 
-  }
+  // }
 
   render() {
     console.log(this.state.allBooks)
     return (
       <div className="book-container">
-        <BookList allBooks={this.state.allBooks} addBookToBookShelf={this.addBookToBookShelf} /*addBookToMainList={this.addBookToMainList} */ addBookToMainListBackEnd={this.addBookToMainListBackEnd} />
+        <BookList allBooks={this.state.allBooks} addBookToBookShelf={this.addBookToBookShelf} addBookToMainList={this.addBookToMainList}  /*addBookToMainListBackEnd={this.addBookToMainListBackEnd} */ />
         <Bookshelf myBookShelf={this.state.myBookShelf} removeBookFromBookShelf={this.removeBookFromBookShelf} />
       </div>
     );

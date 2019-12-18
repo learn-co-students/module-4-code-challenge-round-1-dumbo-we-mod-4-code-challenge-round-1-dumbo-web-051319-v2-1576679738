@@ -33,6 +33,11 @@ class Form extends React.Component {
       img: this.state.newImg
     }
     this.props.createNewBook(newBookObj)
+    this.setState({
+      newTitle: "",
+      newAuthor: "",
+      newImg: ""
+    })
   }
 
   render() {

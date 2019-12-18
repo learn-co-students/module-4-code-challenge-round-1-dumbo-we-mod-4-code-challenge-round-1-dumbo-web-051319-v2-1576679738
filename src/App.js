@@ -41,8 +41,23 @@ class App extends Component {
   }
 
   createNewBook = (newBook) => {
-    this.setState({
-      bookArray: [...this.state.bookArray, newBook]
+    fetch("http://localhost:3005/books", {
+      method: "POST",
+      headers: {
+        'content-type': 'application/json',
+        'accepts': 'application/json'
+      },
+      body: JSON.stringify({
+        title: newBook.title,
+        author: newBook.author,
+        img: newBook.img
+      })
+    })
+    .then(r => r.json())
+    .then((newBookObj) => {
+      this.setState({
+        bookArray: [...this.state.bookArray, newBookObj]
+      })
     })
   }
 

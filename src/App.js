@@ -80,10 +80,12 @@ class App extends Component {
 
 
   render() {
+    let shelveBooksByAuthor = this.state.shelvedBooks.sort((a, b) => a.author.localeCompare(b.author))
+
     return (
       <div className="book-container">
         <BookList bookArray={this.state.bookArray} editBook={this.editBookShelf} createNewBook={this.createNewBook} sortBooks={this.sortBooks} author={this.state.author} />
-        <Bookshelf shelvedBooks={this.state.shelvedBooks} editBook={this.editBookShelf} />
+        <Bookshelf shelvedBooks={shelveBooksByAuthor} editBook={this.editBookShelf} />
       </div>
     );
   }

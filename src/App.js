@@ -35,7 +35,20 @@ class App extends Component {
     const newlyCreatedBook = {...newBook}
     const uuidv4 = require('uuid/v4')
     newlyCreatedBook.id = uuidv4()
-    this.setState({books: [newlyCreatedBook, ...this.state.books]})
+    this.setState({books: [...this.state.books, newlyCreatedBook]})
+    fetch(`http://localhost:3005/books`, {
+      method:'POST',
+      headers: { 
+        'content-type': 'application/json',
+        'accept': 'application/json'
+      },
+      body: JSON.stringify({
+        ...newlyCreatedBook
+      })
+    })
+      .then(r => r.json())
+      .then(book => {console.log(book)})
+      .catch(err => console.log(err))
   }
 
   render() {

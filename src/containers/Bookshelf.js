@@ -1,11 +1,16 @@
 import React from "react";
 import Book from "../components/Book";
 
-const Bookshelf = props => {
+const Bookshelf = (props) => {
+
+  let renderBooks = () => {
+    return props.books.map((book, index) => <Book key={`${book.name} - ${index}`} book={book} handleClick={props.removeBook}/>)
+  }
+
   return (
     <div>
       <h1>Book Shelf</h1>
-      <ul>{/*render list of books here*/}</ul>
+      <ul>{renderBooks()}</ul>
     </div>
   );
 };

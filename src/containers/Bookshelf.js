@@ -5,7 +5,7 @@ const Bookshelf = props => {
   return (
     <div>
       <h1>Book Shelf</h1>
-      <ul>{/*render list of books here*/}</ul>
+      <ul>{props.selectedBooks.map(book => <Book key={book.id} book={book} onClick={props.onClick}/> )}</ul>
     </div>
   );
 };

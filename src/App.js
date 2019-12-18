@@ -33,7 +33,11 @@ class App extends Component {
   }
   
   removeFromShelf = (book) => {
-    console.log('removing')
+    console.log('removing', book)
+    let newShelf = this.state.bookShelf.pop(book)
+    this.setState({
+      bookShelf: newShelf
+    })
 
   }
 
@@ -42,8 +46,8 @@ class App extends Component {
     
     return (
       <div className="book-container">
-        <BookList books={this.state.books} addToShelf={this.addToShelf}/>
-        <Bookshelf books={this.state.bookShelf} removeFromShelf={this.removeFromShelf}/>
+        <BookList books={this.state.books} handleClick={this.addToShelf}/>
+        <Bookshelf books={this.state.bookShelf} handleClick={this.removeFromShelf}/>
       </div>
     );
   }

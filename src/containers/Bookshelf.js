@@ -11,8 +11,9 @@ export class Bookshelf extends Component {
     
     return (
       <div>
+        {console.log(this.props.books)}
         <h1>Book Shelf</h1>
-    <ul>{this.props.books.map(book => <Book book={book} key={book.id} addToShelf={this.props.addToShelf} removeFromShelf={this.props.removeFromShelf}/>)}
+    <ul>{this.props.books.map(book => <Book book={book} key={book.id} handleClick={() => this.props.handleClick}/>)}
 </ul>
       </div>
     )

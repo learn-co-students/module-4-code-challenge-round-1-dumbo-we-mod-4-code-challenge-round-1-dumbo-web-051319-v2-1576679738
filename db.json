@@ -47,6 +47,24 @@
       "title": "We Should All Be Feminists",
       "author": "Chimamanda Ngozi Adichie",
       "img": "https://images-na.ssl-images-amazon.com/images/I/51L9u20bC7L._SX348_BO1,204,203,200_.jpg"
+    },
+    {
+      "title": "The Obstacle",
+      "author": "Ryan Holiday",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41d%2Baa6UYCL._SX352_BO1,204,203,200_.jpg",
+      "id": 9
+    },
+    {
+      "title": "Pride and Prejuice",
+      "author": "Jane Austen",
+      "img": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FM%2FMV5BMTA1NDQ3NTcyOTNeQTJeQWpwZ15BbWU3MDA0MzA4MzE%40._V1_.jpg&imgrefurl=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0414387%2F&docid=FKaMntBgSmADOM&tbnid=4A64fnrdooeBKM%3A&vet=10ahUKEwjP5PeGxb_mAhXwQd8KHQeQCNwQMwh5KAAwAA..i&w=2175&h=3226&bih=766&biw=1440&q=Pride%20and%20Prejudice&ved=0ahUKEwjP5PeGxb_mAhXwQd8KHQeQCNwQMwh5KAAwAA&iact=mrc&uact=8",
+      "id": 10
+    },
+    {
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHgASwMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAAABAEDBQIG/8QANhAAAQQAAwQHBgUFAAAAAAAAAQACAxEEITESE0FRBTJhcYGR8CIzNLHB0RUjUoKhFENTcpL/xAAZAQADAQEBAAAAAAAAAAAAAAAAAgMBBAX/xAAeEQADAAIDAQEBAAAAAAAAAAAAAQIRIQMSMUEyIv/aAAwDAQACEQMRAD8A8dGA51Hjortw3mUvotQQMrOR1/6LzKeDrhZKhhISwOBdXa8fZLywbPUNjlXq06PyyWtcTeYtoB/lLvJe7j52kTY1ShNXwQNlje4kgtB08FE7Nmnc9Vfgvcy9x+idvQkr+sM4mwwjkIs1eRTMfR0T2NcXuFi9QrZo940gdbbNd9BWl1QBvHdEnyUnbwXUTnZnT4WNjJHNc72QCL7UotPFe4l7mrMVYbwR5Ek9ELaG3Q6/kfusrDxGeZsY4nM8gtzdx17tn/IU+WsaH4Ze2UjCslcSQ7aGZ1FKHYdoJ2SaIIBPEnirpZNloZbReozFeXrJFjZJJFVZJI+anlluqM/pBobD3vbXdRXGCP5Evd9lXjsQJ5aZ1G6Hmea4w8mwSOask+pzul3NGWQMN1dPJPkFeWExGTS49PBZ7AZHe0TV8FqMNxtYAWhtZEKVaLxsQxXuJT2NWatPpN7Y4xE2rdw5NWWrcfhz8vuC2Cd8BcY6s5Gxau/EMR+od+ylEJnKYqprxjZ6QnJuxfj91TLPLMKkeSOQFD+FUhHVA6bBCELRS+HEujOY2vGir3dJPDajjDe1x2qSKErlMdXSOnvc9xc8lzjqSoUITCAumhpaSTnwC5QgCxzGi6dwy7VO6bnTxXDtVSvDYgALDiTrtUFj0MtlbGBwvaAzqvL7roRtJqyM+Ph91LRGRmKOnWU7MPMeZWZNwRuhWZOoHcuHNaASCTpWa5cAHEAgjmFC0V4BCELTAQhCABCEIAEIQgAQhCABCEIAtgi3rXm62QCp3I5lX9Gdd/e36rqePdyEAezwSN7wVUrrkrkw8LQ0h7qPaD9FZ/QsP9x1VYKmBrZHBj9M67/XrNNgUK7EjpodSmZEzBHK5gNgV8kQRGaZsbeJ8gusZ8Q/w+Sf6Kg2YzM4Zuyb3evknqsTknM9rwH4XH/kfpyCh3RjG1TnnxAWh4Hnkl5HsHtPjeLOZKirp/TocQvghiME2KFzwXWObgklq4wA4RxEZrI7W1YWUrQ8rZz8iSeh3ozrv/b9U5iY9trqHtDMJPozrv8AD6p2WXdOLiPVJL/RWPyIAkEEZEGxSejeHsDhXV4cEm8Z3VB2YCswz9l5adHc+aGsoyXh4FMX8Q/w+SeixjhGwNa0NAqkjjPiH+HyRh3US06HMJ2syhFWKZpMxDpQWPHbrVo3TJBWY7Q4FKglpsahPMdo5rmjiLjCk1jwtLz6IY/Dti2SwONZkkjIckktbHOJwz7eD+3tWSq8bytkOVJVotgndASWgG61Vr8a99hzGZoQm6piqmtEOxVxBmwARob0Ve+dyCEI6oOzOZHmR5eas8lyCQbGqhC0wu37v0hWxY58bdnZBHDPRCFjlDKmiJsa6WMsLKvjaVQhaljwxtv0/9k=",
+      "id": 11
     }
   ]
 }

@@ -47,7 +47,23 @@ class App extends Component {
 
   //Bonus function for backend
   addBookToMainListBackEnd = (bookObj) => {
-    console.log(bookObj)
+    fetch('http://localhost:3005/books', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        title: bookObj.title,
+        author: bookObj.author,
+        img: bookObj.img,
+      })
+    }).then(response => response.json())
+      .then((response) => {
+        this.setState({
+          allBooks: [...this.state.allBooks, response]
+        })
+      })
+
   }
 
   render() {

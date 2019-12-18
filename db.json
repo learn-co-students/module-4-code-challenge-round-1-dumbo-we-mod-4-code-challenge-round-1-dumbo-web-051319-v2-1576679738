@@ -47,6 +47,18 @@
       "title": "We Should All Be Feminists",
       "author": "Chimamanda Ngozi Adichie",
       "img": "https://images-na.ssl-images-amazon.com/images/I/51L9u20bC7L._SX348_BO1,204,203,200_.jpg"
+    },
+    {
+      "title": "Becoming Michelle Obama",
+      "author": "Michelle Obama",
+      "img": "https://target.scene7.com/is/image/Target/GUEST_c0fb431a-d22f-4e47-a4f8-f822999df7b8?wid=488&hei=488&fmt=pjpeg",
+      "id": 9
+    },
+    {
+      "title": "How to Win Friends and Influence Them",
+      "author": "Dale Carnegie",
+      "img": "https://images.gr-assets.com/books/1442726934l/4865.jpg",
+      "id": 10
     }
   ]
 }

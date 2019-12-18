@@ -8,7 +8,8 @@ class App extends Component {
 
   state = {
     books: [],
-    bookshelf: []
+    bookshelf: [],
+    filterTerm: "All"
   }
 
 componentDidMount(){
@@ -18,6 +19,23 @@ componentDidMount(){
     this.setState({
      books: json_resp
     }) )
+}
+
+setFilterTerm = (term) => {
+    this.setState({
+      filterTerm: term
+    })
+}
+
+whichBooksToRender = () => {
+  let copiedBooks = [...this.state.books]
+  if (this.state.filterTerm === "boring") 
+  {copiedBooks = this.state.books.filter(book => book.review === "boring")}
+  else if (this.state.filterTerm === "wonderful") 
+  {copiedBooks = this.state.books.filter(book => book.review === "wonderful")}
+  else {return copiedBooks}
+
+  return copiedBooks
 }
 
 addBookToShelf = (book) => {
@@ -50,7 +68,7 @@ removeBookFromShelf = (bookObj) => {
       {console.log(this.state)}
     return (
       <div className="book-container">
-        <BookList books = {this.state.books}  handleClick = {this.addBookToShelf} submitBook = {this.submitBook}/>
+        <BookList books = {this.whichBooksToRender()}  handleClick = {this.addBookToShelf} submitBook = {this.submitBook}  setFilterTerm = {this.setFilterTerm}/>
         <Bookshelf books= {this.state.bookshelf}  handleClick = {this.removeBookFromShelf}/>
       </div>
     );

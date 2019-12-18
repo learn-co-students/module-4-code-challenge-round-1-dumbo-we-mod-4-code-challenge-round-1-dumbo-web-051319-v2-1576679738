@@ -4,37 +4,43 @@
       "id": 1,
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
-      "img": "https://mppl.org/wp-content/uploads/0-214x300.jpg"
+      "img": "https://mppl.org/wp-content/uploads/0-214x300.jpg",
+      "review": "boring"
     },
     {
       "id": 2,
       "title": "1984",
       "author": "George Orwell",
-      "img": "https://i0.wp.com/www.casualoptimist.com/wp-content/uploads/2017/01/1984-design-Shepard-Fairey.jpg"
+      "img": "https://i0.wp.com/www.casualoptimist.com/wp-content/uploads/2017/01/1984-design-Shepard-Fairey.jpg",
+      "review": "wonderful"
     },
     {
       "id": 3,
       "title": "To Kill A Mockingbird",
       "author": "Harper Lee",
-      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/7/79/To_Kill_a_Mockingbird.JPG/220px-To_Kill_a_Mockingbird.JPG"
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/7/79/To_Kill_a_Mockingbird.JPG/220px-To_Kill_a_Mockingbird.JPG",
+      "review": "wonderful"
     },
     {
       "id": 4,
       "title": "Long Walk to Freedom",
       "author": "Nelson Mandela",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51DVbVOCedL._SX318_BO1,204,203,200_.jpg"
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51DVbVOCedL._SX318_BO1,204,203,200_.jpg",
+      "review": "boring"
     },
     {
       "id": 5,
       "title": "48 Laws of Power",
       "author": "Robert Green",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71aG%2BxDKSYL.jpg"
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71aG%2BxDKSYL.jpg",
+      "review": "boring"
     },
     {
       "id": 6,
       "title": "Homegoing",
       "author": "Yaa Gyasi",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/41UY3xTBq3L._SX322_BO1,204,203,200_.jpg"
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41UY3xTBq3L._SX322_BO1,204,203,200_.jpg",
+      "review": "boring"
     },
     {
       "id": 7,

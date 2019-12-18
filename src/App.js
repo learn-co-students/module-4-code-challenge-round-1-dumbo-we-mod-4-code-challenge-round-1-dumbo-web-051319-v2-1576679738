@@ -7,15 +7,17 @@ import Bookshelf from "./containers/Bookshelf";
 class App extends Component {
   state={
     bookArray: [],
-    shelvedBooks: []
+    shelvedBooks: [],
+    author: true
   }
 
   componentDidMount() {
     fetch("http://localhost:3005/books")
     .then(r => r.json())
     .then((books) => {
+      let originalSortByAuthor = books.sort((a, b,) => a.author.localeCompare(b.author))
       this.setState({
-        bookArray: books
+        bookArray: originalSortByAuthor
       })
     })
   }
@@ -60,10 +62,27 @@ class App extends Component {
     })
   }
 
+  sortBooks = () => {
+    if (this.state.author === true) {
+      let booksSortedByTitle = this.state.bookArray.sort((a ,b) => a.title.localeCompare(b.title))
+      this.setState({
+        bookArray: booksSortedByTitle,
+        author: false
+      })
+    } else {
+      let booksSortedByAuthor = this.state.bookArray.sort((a, b) => a.author.localeCompare(b.author))
+      this.setState({
+        bookArray: booksSortedByAuthor,
+        author: true
+      })
+    }
+  }
+
+
   render() {
     return (
       <div className="book-container">
-        <BookList bookArray={this.state.bookArray} editBook={this.editBookShelf} createNewBook={this.createNewBook} />
+        <BookList bookArray={this.state.bookArray} editBook={this.editBookShelf} createNewBook={this.createNewBook} sortBooks={this.sortBooks} author={this.state.author} />
         <Bookshelf shelvedBooks={this.state.shelvedBooks} editBook={this.editBookShelf} />
       </div>
     );

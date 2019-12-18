@@ -83,6 +83,18 @@
       "author": "Margaret Atwood",
       "img": "https://images-na.ssl-images-amazon.com/images/I/91qo%2BzL-btL.jpg",
       "id": 14
+    },
+    {
+      "title": "Beloved",
+      "author": "Toni Morrison",
+      "img": "https://images.penguinrandomhouse.com/cover/9780525659273",
+      "id": 15
+    },
+    {
+      "title": "Life & Times of Michael K",
+      "author": "J. M. Coetzee",
+      "img": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403185692l/830264.jpg",
+      "id": 16
     }
   ]
 }

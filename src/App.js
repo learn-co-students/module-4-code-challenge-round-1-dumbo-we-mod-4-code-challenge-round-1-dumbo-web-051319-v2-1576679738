@@ -8,12 +8,10 @@ class App extends Component {
 		books: [],
 		bookShelf: [],
 		newBook: {
-			id: "",
 			title: "",
 			author: "",
 			img: ""
-		},
-		displayStatus: true
+		}
 	};
 	captureId = () => {
 		let lastID = this.props.books[this.props.books.length - 1].id;
@@ -26,12 +24,12 @@ class App extends Component {
 			.then(bookData => this.setState({ books: bookData }))
 			.catch(err => console.error(err));
 	};
+
+	componentDidMount() {
+		this.fetchData();
+	}
 	addBookToShelf = book => {
-		if (this.state.bookShelf.includes(book)) {
-			this.setState({
-				bookShelf: this.state.bookShelf
-			});
-		} else {
+		if (!this.state.bookShelf.includes(book)) {
 			this.setState({
 				bookShelf: [...this.state.bookShelf, book]
 			});
@@ -71,7 +69,7 @@ class App extends Component {
 			})
 		})
 			.then(res => res.json())
-			.then(newBookData => console.log(newBookData))
+			.then(newBookData => this.fetchData())
 			.catch(err => console.log(err));
 
 		this.setState({
@@ -86,10 +84,9 @@ class App extends Component {
 	render() {
 		return (
 			<div className="book-container">
-				{this.fetchData()}
 				<BookList
 					books={this.state.books}
-					onClick={this.addBookToShelf}
+					handleClick={this.addBookToShelf}
 					handleChange={this.handleChange}
 					newBook={this.state.newBook}
 					handleSubmit={this.addNewBookToBookList}

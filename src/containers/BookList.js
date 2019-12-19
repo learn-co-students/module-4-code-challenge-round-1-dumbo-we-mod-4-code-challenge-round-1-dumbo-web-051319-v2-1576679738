@@ -17,7 +17,7 @@ class BookList extends Component {
 						<li key={book.id} style={{ listStyle: "none" }}>
 							<Book
 								book={book}
-								onClick={this.props.onClick}
+								handleClick={this.props.handleClick}
 								displayStatus={this.props.displayStatus}
 							/>
 						</li>

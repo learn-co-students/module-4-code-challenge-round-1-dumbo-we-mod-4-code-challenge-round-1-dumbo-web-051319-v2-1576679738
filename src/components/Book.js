@@ -8,7 +8,7 @@ const Book = props => {
 				<img
 					src={props.book.img}
 					alt={props.book.title}
-					onClick={e => props.onClick(props.book)}
+					onClick={e => props.handleClick(props.book)}
 				/>
 			</div>
 		</div>

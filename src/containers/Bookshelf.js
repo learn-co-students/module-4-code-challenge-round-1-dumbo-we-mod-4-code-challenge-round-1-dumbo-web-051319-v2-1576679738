@@ -10,7 +10,7 @@ const Bookshelf = props => {
 					<li key={book.id} style={{ listStyle: "none" }}>
 						<Book
 							book={book}
-							onClick={props.onClick}
+							handleClick={props.onClick}
 							displayStatus={props.displayStatus}
 						/>
 					</li>
